@@ -24,6 +24,7 @@
       color="accent"
       matTooltip="Add {{ product.title }} to cart"
       mat-icon-button
+      [disabled]="!product.count"
     >
       <mat-icon>shopping_cart</mat-icon>
     </button>
